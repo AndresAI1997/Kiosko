@@ -1,0 +1,14 @@
+id,nombre,codigo_barras,precio,cantidad,categoria
+1,Chocolate 1,9219597580114,3553.15,39,Golosinas
+2,Chocolate 2,8702741885986,1091.60,16,Golosinas
+3,Alfajor 1,5501123661007,3885.81,7,Golosinas
+4,Limpiador Multiuso,1234567890123,2500.00,20,Limpieza
+5,Detergente,9876543210987,1800.00,15,Limpieza
+6,Snack Salado,4321987654321,1200.00,25,Snacks
+7,Gaseosa Cola 1,1000000000001,1500.00,50,Gaseosa
+8,Gaseosa Cola 2,1000000000002,1700.00,45,Gaseosa
+9,Pasta Seca 1,1000000000003,900.00,60,Pastas
+10,Pasta Seca 2,1000000000004,1100.00,55,Pastas
+11,Helado 1L,1000000000005,2500.00,30,Productos Congelados
+12,Vegetales Congelados,1000000000006,2200.00,25,Productos Congelados
+13,Limpieza Profunda,1000000000007,2800.00,20,Limpieza

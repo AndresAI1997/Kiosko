@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nueva venta - Bolurubro-Kiosko</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="app-header">
+        <h1>Bolurubro-Kiosko</h1>
+        <nav class="header-links">
+            <a class="link-home" href="index.html">Panel</a>
+            <a class="link-home" href="add-product.html">Producto</a>
+            <a class="link-home" href="add-discount.html">Descuento</a>
+        </nav>
+    </header>
+    <main class="form-layout">
+        <section class="form-card">
+            <h2>Registrar venta</h2>
+            <form id="sale-form" class="stack">
+                <label>
+                    Producto
+                    <input type="text" name="product" required />
+                </label>
+                <label>
+                    Cantidad
+                    <input type="number" name="quantity" min="1" required />
+                </label>
+                <label>
+                    Total (ARS)
+                    <input type="number" name="total" step="0.01" min="0" required />
+                </label>
+                <label>
+                    Fecha
+                    <input type="date" name="date" />
+                </label>
+                <button type="submit">Guardar venta</button>
+                <p id="sale-status" class="status"></p>
+            </form>
+        </section>
+    </main>
+    <script src="add-sale.js"></script>
+</body>
+</html>

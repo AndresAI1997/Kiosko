@@ -1,0 +1,7 @@
+id,nombre,codigo_barras,precio,cantidad,categoria
+1,Chocolate 1,9219597580114,3553.15,38,Golosinas
+2,Chocolate 2,8702741885986,1091.6,15,Golosinas
+3,Alfajor 1,5501123661007,3885.81,6,Golosinas
+4,Limpiador Multiuso,1234567890123,2500.0,20,Limpieza
+5,Detergente,9876543210987,1800.0,15,Limpieza
+6,Snack Salado,4321987654321,1200.0,25,Snacks

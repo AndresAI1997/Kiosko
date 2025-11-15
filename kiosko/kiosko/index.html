@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bolurubro-Kiosko</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="app-header">
+        <div class="brand">
+            <img src="logo.png" alt="Bolurubro-Kiosko" class="brand-logo only" />
+        </div>
+        <div class="header-filter">
+            <input type="text" id="inventario-filter" placeholder="Filtrar inventario..." />
+            <a class="action-button" href="add-product.html">Agregar Producto</a>
+        </div>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <button class="nav-button active" data-section="inventario">Inventario</button>
+            <button class="nav-button" data-section="ventas">Ventas</button>
+            <button class="nav-button" data-section="descuentos">Descuentos</button>
+        </aside>
+        <main class="content">
+            <section id="inventario" class="panel visible">
+                <header class="panel-header">
+                    <h2>Inventario</h2>
+                </header>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Categoria</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                            </tr>
+                        </thead>
+                        <tbody id="inventario-body"></tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="ventas" class="panel">
+                <header class="panel-header">
+                    <h2>Ventas</h2>
+                    <div class="filter-group">
+                        <input type="text" id="ventas-filter" placeholder="Filtrar por producto o fecha" />
+                        <a class="action-button" href="add-sale.html">Agregar</a>
+                    </div>
+                </header>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Fecha</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ventas-body"></tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="descuentos" class="panel">
+                <header class="panel-header">
+                    <h2>Descuentos</h2>
+                    <div class="filter-group">
+                        <input type="text" id="descuentos-filter" placeholder="Filtrar por nombre o tipo" />
+                        <a class="action-button" href="add-discount.html">Agregar</a>
+                    </div>
+                </header>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Tipo</th>
+                                <th>Condicion</th>
+                                <th>Porcentaje</th>
+                                <th>Vigencia</th>
+                            </tr>
+                        </thead>
+                        <tbody id="descuentos-body"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+

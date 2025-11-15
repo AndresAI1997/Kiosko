@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar Producto - Bolurubro-Kiosko</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="app-header">
+        <h1>Bolurubro-Kiosko</h1>
+        <a class="link-home" href="index.html">Volver al panel</a>
+    </header>
+    <main class="form-layout">
+        <section class="form-card">
+            <h2>Agregar nuevo producto</h2>
+            <form id="product-form" class="stack">
+                <label>
+                    ID
+                    <input type="number" name="id" required min="1" />
+                </label>
+                <label>
+                    Nombre
+                    <input type="text" name="name" required />
+                </label>
+                <label>
+                    Codigo de barras
+                    <input type="text" name="barcode" required />
+                </label>
+                <label>
+                    Precio
+                    <input type="number" step="0.01" min="0" name="price" required />
+                </label>
+                <label>
+                    Cantidad
+                    <input type="number" min="0" name="quantity" required />
+                </label>
+                <label>
+                    Categoria
+                    <select name="category" required>
+                        <option value="">Selecciona categoria</option>
+                        <option value="Golosinas">Golosinas</option>
+                        <option value="Gaseosa">Gaseosa</option>
+                        <option value="Pastas">Pastas</option>
+                        <option value="Productos Congelados">Productos Congelados</option>
+                        <option value="Limpieza">Limpieza</option>
+                        <option value="Snacks">Snacks</option>
+                    </select>
+                </label>
+                <button type="submit">Guardar producto</button>
+                <p id="form-status" class="status"></p>
+            </form>
+        </section>
+    </main>
+    <script src="add-product.js"></script>
+</body>
+</html>

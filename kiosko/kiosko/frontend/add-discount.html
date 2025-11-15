@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuevo descuento - Bolurubro-Kiosko</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="app-header">
+        <h1>Bolurubro-Kiosko</h1>
+        <nav class="header-links">
+            <a class="link-home" href="index.html">Panel</a>
+            <a class="link-home" href="add-product.html">Agregar producto</a>
+        </nav>
+    </header>
+    <main class="form-layout">
+        <section class="form-card">
+            <h2>Crear descuento</h2>
+            <form id="discount-form" class="stack">
+                <label>
+                    Nombre
+                    <input type="text" name="name" required />
+                </label>
+                <label>
+                    Tipo
+                    <select name="type" required>
+                        <option value="">Selecciona tipo</option>
+                        <option value="General">General</option>
+                        <option value="Categoria">Categoria</option>
+                        <option value="Producto">Producto</option>
+                        <option value="Multiplicador">Multiplicador</option>
+                    </select>
+                </label>
+                <label>
+                    Condicion
+                    <input type="text" name="condition" placeholder="Ej: minimo 3 productos" />
+                </label>
+                <label>
+                    Porcentaje
+                    <input type="number" name="percentage" min="0" max="100" step="0.1" required />
+                </label>
+                <button type="submit">Guardar descuento</button>
+                <p id="discount-status" class="status"></p>
+            </form>
+        </section>
+    </main>
+    <script src="add-discount.js"></script>
+</body>
+</html>
